@@ -127,7 +127,19 @@ export function RSVPForm({ setTyping }) {
                         />
                     </button>
                 </div>
-
+                <h2 className="text-xl text-[#1F2A44] font-fanttor font-semibold">
+                        Numero de Acompañantes <br /> (Incluyendote)
+                </h2>
+                <input
+                    type="number"
+                    min="1"
+                    className="p-2 rounded border"
+                    placeholder="Acompañantes"
+                    value={form.guests}
+                    onChange={(e) =>
+                    setForm({ ...form, guests: e.target.value })
+                    }
+                />
                 
 
                 <textarea
